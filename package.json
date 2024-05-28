@@ -1,0 +1,42 @@
+{
+  "name": "trello",
+  "version": "1.0.0",
+  "description": "Trello",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "author": {
+    "name": "Muhammad mujahid",
+    "email": "mohamed.mojahead@gmail.com"
+  },
+  "build": {
+    "appId": "com.mujahid.trello",
+    "productName": "Trello",
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "category": "Network",
+      "icon": "trello.png"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "package.json",
+      "trello.png"
+    ]
+  },
+  "homepage": "thismujahid.github.io",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-context-menu": "^4.0.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "electron-tray": "^0.1.1"
+  }
+}
