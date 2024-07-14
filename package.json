@@ -1,7 +1,7 @@
 {
-  "name": "trello",
+  "name": "google-chat",
   "version": "1.0.0",
-  "description": "Trello",
+  "description": "Electron App For Google Chat webapp",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -12,20 +12,20 @@
     "email": "mohamed.mojahead@gmail.com"
   },
   "build": {
-    "appId": "com.mujahid.trello",
-    "productName": "Trello",
+    "appId": "com.mujahid.google-chat",
+    "productName": "Google Chat",
     "linux": {
       "target": [
         "deb"
       ],
       "category": "Network",
-      "icon": "trello.png"
+      "icon": "chat.png"
     },
     "files": [
       "main.js",
       "preload.js",
       "package.json",
-      "trello.png"
+      "chat.png"
     ]
   },
   "homepage": "thismujahid.github.io",

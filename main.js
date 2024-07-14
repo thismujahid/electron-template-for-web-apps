@@ -18,7 +18,7 @@ function createWindow() {
         }
     });
 
-    mainWindow.loadURL('https://trello.com');
+    mainWindow.loadURL('https://chat.google.com');
 
     mainWindow.on('closed', () => {
         mainWindow = null;
@@ -47,7 +47,7 @@ function createWindow() {
 app.on('ready', () => {
     createWindow();
 
-    tray = new Tray(path.join(__dirname, 'trello.png'));
+    tray = new Tray(path.join(__dirname, 'chat.png'));
     const contextMenu = Menu.buildFromTemplate([
         {
             label: 'Reload',
@@ -62,7 +62,7 @@ app.on('ready', () => {
         }
     ]);
 
-    tray.setToolTip('Trello');
+    tray.setToolTip('Google Chat');
     tray.setContextMenu(contextMenu);
 
     tray.on('click', () => {
